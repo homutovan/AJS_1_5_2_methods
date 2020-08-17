@@ -70,7 +70,7 @@ test('checking up 1LVL for 0HP', () => {
   expect(() => {
     const SpecCharacter = typeFabric('Undead', Character);
     const character = new SpecCharacter('John');
-    const point = 10000 / (100 - params['Undead'].defense);
+    const point = 10000 / (100 - params.Undead.defense);
     character.damage(point);
     character.levelUp();
   }).toThrow('it is impossible to raise the level of a dead character!');
